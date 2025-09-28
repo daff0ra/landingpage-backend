@@ -11,6 +11,8 @@ export default defineConfig({
         tailwindcss(),
     ],
     build: {
-        outDir: 'dist'
-      },
+"src": "package.json",
+          "use": "npm-scripts",
+          "outputDirectory": "dist" // Change 'dist' to your actual output folder
+          },
 });
